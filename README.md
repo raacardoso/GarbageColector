@@ -1,1 +1,1 @@
-# GarbageColector
+# GarbageCollector
