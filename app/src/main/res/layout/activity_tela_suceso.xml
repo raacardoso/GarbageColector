@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_Sucesso"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313435"
+    android:textAlignment="center"
+    tools:context=".TelaSuceso">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
+        android:background="#313435"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/tv_sucesso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parabéns, sua solicitação foi enviada com sucesso "
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#3DDB83"
+            android:textSize="33dp" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="codigo de solicitação:   0d05f3z0d51f0546svr"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#3DDA82"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_usu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Codigo do usuário (ID): 2e51f5a"
+            android:textAlignment="center"
+            android:textColor="#3DDB83"
+            android:textIsSelectable="false"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="650dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_concluir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#3C3F41"
+            android:onClick="abrir_tela_Main"
+            android:text="Concluir"
+            android:textColor="#3FDC84" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

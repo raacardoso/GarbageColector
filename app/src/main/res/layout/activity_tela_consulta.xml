@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313435"
+    tools:context=".TelaConsulta">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_diacoleta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Selecione um dia para a Coleta"
+            android:textAlignment="center"
+            android:textColor="#3E859F"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_data1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3C3F41"
+            android:onClick="abrir_tela_suceso"
+            android:text="01/12/2022"
+            android:textColor="#3DDB83" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_data2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3C3F41"
+            android:onClick="abrir_tela_suceso"
+            android:text="08/12/2022"
+            android:textColor="#3DDB83" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_data3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3C3F41"
+            android:onClick="abrir_tela_suceso"
+            android:text="15/12/2022"
+            android:textColor="#3DDB83" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="260dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_avisoNatal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pedimos desculpas, devido ás proximas datas comemorativas Natal e Ano Novo nossa frota de veiculos deverá sofrer alterações. Fique atento as datas corretas de descarte."
+            android:textAlignment="center"
+            android:textColor="#82888A" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="650dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_voltar2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#3C3F41"
+            android:onClick="abrir_tela_Main"
+            android:text="Voltar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
